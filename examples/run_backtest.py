@@ -5,9 +5,9 @@ import pandas as pd
 # Add the project root to the Python path to allow for module imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.core.backtest import Backtester
-from src.data_provider import DataProvider
-from strategies.simple_ma_strategy import SimpleMAStrategy
+from src.trading.backtester import Backtester
+from src.data_collection.provider import DataProvider
+from src.trading.strategies.simple_ma import SimpleMAStrategy
 
 def main():
     """
