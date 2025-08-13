@@ -5,8 +5,8 @@ from typing import List, Optional
 
 import edgar
 
-from gotothemoon.datacollector.schemas import DisclosureSchema
-from gotothemoon.datacollector.utils.tickers import get_us_tickers
+from ..schemas import DisclosureSchema
+from ..utils.tickers import get_us_tickers
 
 
 class EdgarCollector:

@@ -6,11 +6,11 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import List, Dict
 
-from gotothemoon.datacollector.schemas import BaseSchema
-from gotothemoon.datacollector.sources.kr_dart import DartCollector
-from gotothemoon.datacollector.sources.us_edgar import EdgarCollector
-from gotothemoon.datacollector.sources.news_collector import NewsCollector
-from gotothemoon.datacollector.sources.research_collector import ResearchCollector
+from .schemas import BaseSchema
+from .sources.kr_dart import DartCollector
+from .sources.us_edgar import EdgarCollector
+from .sources.news_collector import NewsCollector
+from .sources.research_collector import ResearchCollector
 
 # --- Approved News Sources ---
 KR_NEWS_SOURCES = [
@@ -155,7 +155,7 @@ if __name__ == '__main__':
     print(f"Fetching data from {start_date_str} to {end_date_str}")
 
     # Set the base path to a top-level 'data' directory
-    base_data_path = Path(__file__).parent.parent.parent / 'data'
+    base_data_path = Path(__file__).parent.parent.parent.parent / 'data'
     all_collected_data = []
 
     # Run Disclosure Collectors
