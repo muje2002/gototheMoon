@@ -7,7 +7,7 @@ import pandas as pd
 from pykrx import stock
 import OpenDartReader
 
-from gotothemoon.datacollector.schemas import DisclosureSchema
+from ..schemas import DisclosureSchema
 
 
 class DartCollector:

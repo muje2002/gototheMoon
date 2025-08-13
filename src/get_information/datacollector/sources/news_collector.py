@@ -6,7 +6,7 @@ from typing import List, Dict, Tuple, Set
 from gnews import GNews
 from newspaper import Article, Config
 
-from gotothemoon.datacollector.schemas import NewsSchema
+from ..schemas import NewsSchema
 
 
 class NewsCollector:

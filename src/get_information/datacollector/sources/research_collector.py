@@ -5,8 +5,8 @@ from typing import List, Optional
 
 import finnhub
 
-from gotothemoon.datacollector.schemas import ResearchSchema
-from gotothemoon.datacollector.utils.tickers import get_us_tickers, get_kr_tickers
+from ..schemas import ResearchSchema
+from ..utils.tickers import get_us_tickers, get_kr_tickers
 
 class ResearchCollector:
     """
